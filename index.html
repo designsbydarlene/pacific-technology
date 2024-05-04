@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="icon" href="images/faveicon.png" />
+<meta charset="utf-8">
+<!------ link local css and js to html page ----->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="js/main.js"></script>
+<!------- make page resizable for mobile -------->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-------- import semantic ui framework --------->
+<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+<!------ import modal function for popups ------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.7/semantic.min.js"></script>
+<title>Pacific Technology Solutions, LLC</title>
+<div class="tablet mobile only row">
+  <div class="column">
+    <div class="ui fixed inverted borderless menu"><a id="mobile_item" class="item"><i class="bars icon"></i></a><img class="menu-logo" src="images/nav-logo.png"><br>
+      <br>
+    </div>
+  </div>
+</div>
+</head>
+<body>
+<!----------------------------
+------------------------------
+----------- HEADER -----------
+------------------------------
+----------------------------->
+<div class="ui pushable segment">
+<div class="ui inverted left vertical borderless sidebar menu" id="left-menu"> <a class="item" href="#home"><br>
+  Home</a>
+  <div class="ui divider"></div>
+  <a class="item" href="#about">About</a>
+  <div class="ui divider"></div>
+  <a class="item" href="#services">Services</a> <a class="sub item" href="#tech-plan">Technology Planning</a> <a class="sub item" href="#help-desk">Service & Help Desk</a> <a class="sub item" href="#desk-supp">Desktop Support & Field Operations</a> <a class="sub item" href="#int-serv">Integration Services</a> <a class="sub item" href="#education">Education</a> <a class="sub item" href="#host-sol">Hosted Solutions & Asset Management</a> <a class="sub item" href="#testing">PearsonVUE Testing</a>
+  <div class="ui divider"></div>
+  <a class="item" href="#partners">Partners</a>
+  <div class="ui divider"></div>
+  <a class="item" href="#contact">Contact Us</a> <a class="sub item" href="#cont-info">Contact Information</a> <a class="sub item" href="#locations">Locations</a> </div>
+<script>
+        $('#left-menu').first()
+  .sidebar('setting', {transition: 'push'})
+  .sidebar('attach events', '#mobile_item')
+;
+    
+$('#top-menu')
+.sticky({
+  })
+;
+
+    $('ui.inverted.left.vertical.sidebar.menu').sidebar({
+    context: $('.ui.pushable.segment'),
+    transition: 'overlay'
+}).sidebar('attach events', '#mobile_item');
+        </script>
+<div class="pusher">
+  <div id="large-header" class="large-header" id="home">
+  <canvas id="demo-canvas"></canvas>
+  <h1 class="main-title">
+  <div class="ui container">
+    <h1 class="large-font">PACIFIC TECHNOLOGY SOLUTIONS</h1>
+    <a class="ui large blue button" href="#about">LEARN MORE</a> </div>
+</div>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script> 
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script> 
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script> 
+
+<!----------------------------
+------------------------------
+----------- ABOUT ------------
+------------------------------
+----------------------------->
+<div class="about-body">
+  <div class="ui center aligned container">
+    <h1 class="large-font-about" id="about">ABOUT OUR COMPANY</h1>
+    <div class="ui center aligned one column grid about">
+      <div class="eleven wide column"> Since 1998, Pacific Technology Solutions, LLC. has been focused on meeting the needs of customers through Hawaii. We are committed to providing quality services and building long-term and trusted relationships with our customers. </div>
+    </div>
+    <div class="ui three column stackable grid about">
+      <div class="ui column"> <i class="ui massive blue info icon"></i>
+        <div class="ui three wide segment">A sole-source technology solutions provider. We are locally owned and based out of the island of Hawaii. We promise to deliver the best services and solutions, backed by a wealth of knowledge and experience.</div>
+      </div>
+      <div class="ui column"> <i class="ui massive blue huge map signs icon"></i>
+        <div class="ui three wide segment">With offices located on every major island, our team is fit to tackle all your IT needs. Our large team of certified technical professionals will provide custom solutions tailored to any IT project.</div>
+      </div>
+      <div class="ui column"> <i class="ui massive blue user icon"></i>
+        <div class="ui three wide segment">We partner with the market leaders in technology to provide the best solutions in hardware, software and support. Our collaborations allow us to transform technology in the professional workspace.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------
+------------------------------
+--------- SERVICES -----------
+------------------------------
+----------------------------->
+<div class="services-body" id="services">
+<div class="ui very padded center aligned container">
+<div class="center aligned column">
+<h1 class="large-font-about" id="about">SERVICES</h1>
+<div class="ui center aligned one column grid about">
+  <div class="eleven wide column">Pacific Technology Solutions, LLC offers a wide array of solutions. We understand that every organization has different IT goals and we want to help you meet them. Our team will provide you with cutting edge technology and professional expertise.</div>
+</div>
+<div class="ui three column stackable grid">
+<div class="column">
+<div class="ui segment">
+<i class="huge calendar icon"></i>
+<div class="ui segment" id="tech-plan"> <b>Technology Planning</b><br>
+  Technology road mapping, strategic planning... </div>
+<button class="ui mini blue button" type="button" id="technology">
+MORE</a>
+</div>
+</div>
+<div class="column">
+<div class="ui segment">
+<i class="huge phone icon"></i>
+<div class="ui segment" id="help-desk"> <b>Service & Help Desk</b><br>
+  24x7 help desk and remote support serves as... </div>
+<button class="ui mini blue button" type="button" id="help">
+MORE</a>
+</div>
+</div>
+<div class="column">
+<div class="ui segment">
+<i class="huge desktop icon"></i>
+<div class="ui segment" id="desk-supp"> <b>Desktop Support & Field Operations</b><br>
+  Statewide desktop, printer, and server... </div>
+<button class="ui mini blue button" type="button" id="desktop-support">
+MORE</a>
+</div>
+</div>
+</div>
+<div class="ui three column stackable grid">
+<div class="column">
+<div class="ui segment">
+<i class="huge sitemap icon"></i>
+<div class="ui segment" id="int-serv"> <b>Integration Services</b><br>
+  Network and WAN. As Microsoft Certified... </div>
+<button class="ui mini blue button" type="button" id="integration">
+MORE</a>
+</div>
+</div>
+<div class="column">
+<div class="ui segment">
+<i class="huge pencil icon"></i>
+<div class="ui segment" id="education"> <b>Education</b><br>
+  Solutions made for education, including... </div>
+<button class="ui mini blue button" type="button" id="edu">
+MORE</a>
+</div>
+</div>
+<div class="column">
+<div class="ui segment">
+<i class="huge calendar icon"></i>
+<div class="ui segment" id="host-sol"> <b>Hosted Solutions & Asset Management</b><br>
+  Network 2000 has a programming and... </div>
+<button class="ui mini blue button" type="button" id="hosted-solutions">
+MORE</a>
+</div>
+</div>
+</div>
+<div class="ui three column stackable grid">
+<div class="column">
+<div class="ui segment">
+<i class="huge file icon"></i>
+<div class="ui segment" id="testing"> <b>PearsonVUE Testing</b><br>
+  If you are in need of a testing center, visit our... </div>
+<button class="ui mini blue button" type="button" id="pearsonvue">
+MORE</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(function(){
+	$("#technology").click(function(){
+		$(".technology").modal('show');
+	});
+	$(".technology").modal({
+		closable: true
+	});
+});
+</script> 
+<script>
+$(function(){
+	$("#help").click(function(){
+		$(".help").modal('show');
+	});
+	$(".help").modal({
+		closable: true
+	});
+});    
+</script> 
+<script>
+$(function(){
+	$("#desktop-support").click(function(){
+		$(".desktop-support").modal('show');
+	});
+	$(".desktop-support").modal({
+		closable: true
+	});
+});    
+</script> 
+<script>
+$(function(){
+	$("#integration").click(function(){
+		$(".integration").modal('show');
+	});
+	$(".integration").modal({
+		closable: true
+	});
+});    
+</script> 
+<script>
+$(function(){
+	$("#edu").click(function(){
+		$(".edu").modal('show');
+	});
+	$(".edu").modal({
+		closable: true
+	});
+});    
+</script> 
+<script>
+$(function(){
+	$("#hosted-solutions").click(function(){
+		$(".hosted-solutions").modal('show');
+	});
+	$(".hosted-solutions").modal({
+		closable: true
+	});
+});    
+    </script> 
+<script>
+$(function(){
+	$("#pearsonvue").click(function(){
+		$(".pearsonvue").modal('show');
+	});
+	$(".pearsonvue").modal({
+		closable: true
+	});
+});    
+</script>
+<div class="ui modal technology" id="technology" style="padding: 20px;">
+<i class="close icon"></i>
+<form class="ui form four wide column centered">
+  Technology road mapping, strategic planning, timelines and milestones, hardware provision.
+</form>
+</div>
+<div class="ui modal help" id="help" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    24x7 help desk and remote support serves as a single point of contact for all IT service needs. It's not just about solving end users' immediate technical problems. Rather, it's about providing consistent, personalized support for their corporate and personal technology — anytime, anywhere, across all channels — to optimize the end-user experience.
+  </form>
+</div>
+<div class="ui modal desktop-support" id="desktop-support" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    Statewide desktop, printer, and server support. We are built to handle large and small projects with warehousing, staging and deployment.
+  </form>
+</div>
+<div class="ui modal integration" id="integration" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    Network and WAN. As Microsoft Certified and Cisco Premier partners we have certified and experienced engineers that can plan, provide and support the needs of our customers.
+  </form>
+</div>
+<div class="ui modal edu" id="edu" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    Solutions made for education, including NASPO pricing, Chrome deployment and more.
+  </form>
+</div>
+<div class="ui modal hosted-solutions" id="hosted-solutions" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    Programming and hosted solutions team that provide custom solutions for our customers.
+  </form>
+</div>
+<div class="ui modal pearsonvue" id="pearsonvue" style="padding: 20px;"> <i class="close icon"></i>
+  <form class="ui form four wide column centered">
+    If you are in need of a testing center, visit our office on Oahu. Reach out to our testing department for more info.
+  </form>
+</div>
+<!----------------------------
+------------------------------
+--------- PARTNERS -----------
+------------------------------
+----------------------------->
+<div class="partners-body" id="partners">
+  <div class="ui container">
+    <div class="ui center aligned grid">
+      <center><h1 class="large-font">OUR PARTNERS</h1></center>
+      <!-- #region Jssor Slider Begin --> 
+      <!-- Generator: Jssor Slider Maker --> 
+      <!-- Source: https://www.jssor.com --> 
+      <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script> 
+      <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $AutoPlaySteps: 5,
+              $SlideDuration: 160,
+              $SlideWidth: 200,
+              $SlideSpacing: 20,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 5
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+      <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 057 css*/
+        .jssorb057 .i {position:absolute;cursor:pointer;}
+        .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2000;stroke-miterlimit:10;stroke-opacity:0.4;}
+        .jssorb057 .i:hover .b {stroke-opacity:.7;}
+        .jssorb057 .iav .b {stroke-opacity: 1;}
+        .jssorb057 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 073 css*/
+        .jssora073 {display:block;position:absolute;cursor:pointer;}
+        .jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+        .jssora073:hover {opacity:.8;}
+        .jssora073.jssora073dn {opacity:.4;}
+        .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+    </style>
+      <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;"> 
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);"> <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" /> </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+          <div> <img data-u="image" src="images/partners-1.png" /> </div>
+          <div> <img data-u="image" src="images/partners-2.png" /> </div>
+          <div> <img data-u="image" src="images/partners-3.png" /> </div>
+          <div> <img data-u="image" src="images/partners-4.png" /> </div>
+          <div> <img data-u="image" src="images/partners-5.png" /> </div>
+          <div> <img data-u="image" src="images/partners-6.png" /> </div>
+          <div> <img data-u="image" src="images/partners-7.png" /> </div>
+          <div> <img data-u="image" src="images/partners-8.png" /> </div>
+          <div> <img data-u="image" src="images/partners-9.png" /> </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+          <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+            </svg>
+          </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+          <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+          </svg>
+        </div>
+        <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+          <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+          </svg>
+        </div>
+      </div>
+      <script type="text/javascript">jssor_1_slider_init();</script> 
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Contact us ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div class="contact-us-body" id="contact">
+  <div class="ui one column padded centered grid">
+    <h1 class="large-font" style="color: #fff;" id="cont-info"><br>
+      CONTACT US<br>
+    </h1>
+    <!-- phone -->
+    <div class="ui four column very padded center aligned stackable grid">
+      <div class="ui three wide column">
+        <div class="ui inverted segment"><i class="phone huge white icon"></i><br>
+          <div class="ui center aligned segment">
+            <h3>(808)848-0000</h3>
+          </div>
+        </div>
+      </div>
+      <div class="ui three wide column">
+        <div class="ui inverted segment"><i class="envelope huge white icon"></i><br>
+          <div class="ui center aligned segment">
+            <h3><a class="black-link" href="mailto:admin@network2000-hi.com">General Inquiries</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="ui three wide column">
+        <div class="ui inverted segment"><i class="facebook huge white icon"></i><br>
+          <div class="ui center aligned segment">
+            <h3><a class="black-link" href="https://www.facebook.com/Network2000Hawaii">Facebook</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="ui three wide column">
+        <div class="ui inverted segment"><i class="twitter huge white icon"></i><br>
+          <div class="ui center aligned segment">
+            <h3><a class="black-link" href="https://twitter.com/N2K_HI">Twitter</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- locations -->
+<div class="locations-body" id="locations">
+  <div class="ui one column padded center aligned grid">
+    <div class="ui four column very padded centered stackable grid">
+      <div class="ui two wide column">
+        <div class="ui left aligned inverted segment">
+          <h3 class="contact-us-medium">Oahu</h3>
+          <p>2100 N. Nimitz Hwy<br>
+            Honolulu, HI 96819</p>
+        </div>
+      </div>
+      <div class="ui two wide column">
+        <div class="ui left aligned inverted segment">
+          <h3 class="contact-us-medium">Hilo</h3>
+          <p>159 Kalanikoa St #117<br>
+            Hilo, HI 96720</p>
+        </div>
+      </div>
+      <div class="ui two wide column">
+        <div class="ui left aligned inverted segment">
+          <h3 class="contact-us-medium">Kaua'i</h3>
+          <p>4641 Kuilei Rd<br>
+            Lawai, HI 96765</p>
+        </div>
+      </div>
+      <div class="ui two wide column">
+        <div class="ui left aligned inverted segment">
+          <h3 class="contact-us-medium">Maui</h3>
+          <p>355 Hukilike Street #116<br>
+            Kahului, HI 96732</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+/* Set a size for our map container, the Google Map will take up 100% of this container */
+#map {
+    width: auto;
+    height: 500px;
+}
+</style>
+
+<!-- 
+            You need to include this script tag on any page that has a Google Map.
+
+            The following script tag will work when opening this example locally on your computer.
+            But if you use this on a localhost server or a live website you will need to include an API key. 
+            Sign up for one here (it's free for small usage): 
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+            After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
+        --> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9WFjrNzoP03DV5zKx6n5jFETs2VGSB_Q"></script> 
+<script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 18,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(21.328116, -157.885830, -73.9400), // Network 2000
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative.country","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.country","elementType":"labels.text","stylers":[{"visibility":"simplified"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.locality","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":"-100"},{"lightness":"30"}]},{"featureType":"administrative.neighborhood","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"simplified"},{"gamma":"0.00"},{"lightness":"74"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(21.328116, -157.885830, -73.9400),
+                    map: map,
+                    title: 'Pacific Technology Solutions, LLC'
+                });
+            }
+        </script>
+<body>
+<!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+<div id="map"></div>
+</body>
+</html>

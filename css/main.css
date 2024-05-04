@@ -1,0 +1,151 @@
+/*******************************************
+*******************NAVBAR*******************
+*******************************************/
+.ui.menu {
+    border-radius: 0px;
+}
+.ui.grid {
+    padding: 0 !important;
+}
+.pushable.segment {
+    margin: 0 !important;
+    background-color: #1b1c1d;
+}
+.menu-logo {
+    margin-top: 10px;
+    height: 20px !important;
+}
+.sub.item {
+    font-size: 12px !important;
+    color: #969696 !important;
+    padding-top: 1px !important;
+}
+
+
+
+/*******************************************
+*******************HEADER*******************
+*******************************************/
+.large-header {
+    height: auto;
+    position: relative;
+    background: #1b1c1d;
+    height: auto !important;
+    overflow: visible !important; 
+}
+
+.main-title {
+    overflow-y: hidden; // hide vertical   
+    overflow: hidden !important;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+.container .main-title {
+    overflow-y: hidden; // hide vertical   
+    overflow: hidden !important;
+    text-transform: uppercase;
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+.main-title .thin {
+    overflow: hidden !important;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+.demo .main-title {
+    overflow: hidden !important;
+    font-size: 3em;
+}
+}
+/*******************************************
+*******************ABOUT********************
+*******************************************/
+
+.about-body {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.ui.three.column.stackable.grid.about {
+    padding-top: 3%;
+}
+.large-font-about {
+    font-size: 8vh;
+    line-height: 6vh;
+}
+
+@media only screen and (max-width: 768px) {
+.large-font-about {
+    font-size: 6vh;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.large-font-about {
+    font-size: 4vh;
+    line-height: 4vh;
+}
+}
+/*******************************************
+****************SERVICES********************
+*******************************************/
+.services-body {
+    background: url("../images/services-background-1.png");
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    padding-top: 10%;
+    padding-bottom: 10% !important;
+}
+/*******************************************
+****************PARTNERS********************
+*******************************************/
+.partners-body {
+    background-color: #e2e2e2;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+/*******************************************
+****************CONTACT US******************
+*******************************************/
+.contact-us-body {
+    background-color: #1f1c1d;
+}
+/*******************************************
+****************LOCATIONS*******************
+*******************************************/
+.locations-body {
+    background-color: #1f1c1d;
+}
+/*******************************************
+*******************GENERAL******************
+*******************************************/
+.large-font {
+    font-size: 8vh;
+}
+
+@media only screen and (max-width: 768px) {
+.large-font {
+    font-size: 6vh;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.large-font {
+    font-size: 4vh;
+}
+}
+.black-link {
+    color: #1b1c1d;
+}
+a:active, a:hover {
+    color: #1b1c1d;
+}
